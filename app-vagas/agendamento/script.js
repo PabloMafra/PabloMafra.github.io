@@ -68,7 +68,7 @@ document.querySelector('#agendar').addEventListener('click', () => {
             fechar.style.display = "flex";
             background.style.display = "flex";
             icon_sad.style.display = "none";
-
+            
             // location.reload();
         
               firebaseRef.get().then(snapshot => {

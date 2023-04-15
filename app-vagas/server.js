@@ -152,49 +152,49 @@
 
 
 //funcionando
-  const firebaseConfig = {
-    apiKey: "AIzaSyDfSQex_8VL8GvNZnMchygRqhE0Zki9up8",
-    authDomain: "vagas-garagem-bd78f.firebaseapp.com",
-    databaseURL: "https://vagas-garagem-bd78f-default-rtdb.firebaseio.com",
-    projectId: "vagas-garagem-bd78f",
-    storageBucket: "vagas-garagem-bd78f.appspot.com",
-    messagingSenderId: "255602450180",
-    appId: "1:255602450180:web:096456bb32b9df37137a51",
-    measurementId: "G-KCN7NX1Y8V"
-  };
+  // const firebaseConfig = {
+  //   apiKey: "AIzaSyDfSQex_8VL8GvNZnMchygRqhE0Zki9up8",
+  //   authDomain: "vagas-garagem-bd78f.firebaseapp.com",
+  //   databaseURL: "https://vagas-garagem-bd78f-default-rtdb.firebaseio.com",
+  //   projectId: "vagas-garagem-bd78f",
+  //   storageBucket: "vagas-garagem-bd78f.appspot.com",
+  //   messagingSenderId: "255602450180",
+  //   appId: "1:255602450180:web:096456bb32b9df37137a51",
+  //   measurementId: "G-KCN7NX1Y8V"
+  // };
 
   
 
-  firebase.initializeApp(firebaseConfig);
-  document.querySelector('#agendar').addEventListener('click', ()=>{
+  // firebase.initializeApp(firebaseConfig);
+  // document.querySelector('#agendar').addEventListener('click', ()=>{
 
-    const vaga = document.getElementById('vaga').value;
-    var firebaseRef = firebase.database().ref(`usuarios/vaga${vaga}`);
+  //   const vaga = document.getElementById('vaga').value;
+  //   var firebaseRef = firebase.database().ref(`usuarios/vaga${vaga}`);
 
     
 
-    const name = document.getElementById('name').value;
-    const placa = document.getElementById('placa').value;
-    const hour = document.getElementById('hour').value;
+  //   const name = document.getElementById('name').value;
+  //   const placa = document.getElementById('placa').value;
+  //   const hour = document.getElementById('hour').value;
 
-    const usuarios = {
-      name: name,
-      placa: placa,
-      hour: hour
-    }
+  //   const usuarios = {
+  //     name: name,
+  //     placa: placa,
+  //     hour: hour
+  //   }
 
-    firebaseRef.push(usuarios).then(()=>{
-      console.log('Dados gravados com sucesso!');
-      firebaseRef.get().then(snapshot=>{
-        snapshot.docs.forEach(doc =>{
-          console.log(doc.data())
-        })
-      })
-      // location.reload();
-    }).catch((error)=>{
-      console.error('Erro ao gravar dados: ', error);
-    });
-  });
+  //   firebaseRef.push(usuarios).then(()=>{
+  //     console.log('Dados gravados com sucesso!');
+  //     firebaseRef.get().then(snapshot=>{
+  //       snapshot.docs.forEach(doc =>{
+  //         console.log(doc.data())
+  //       })
+  //     })
+  //     // location.reload();
+  //   }).catch((error)=>{
+  //     console.error('Erro ao gravar dados: ', error);
+  //   });
+  // });
 
 
 
