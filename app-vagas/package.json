@@ -1,0 +1,15 @@
+{
+  "name": "projetojs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server"
+  },
+  "author": "pablo",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.19.1"
+  }
+}
