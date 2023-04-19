@@ -1,3 +1,6 @@
+*{
+  appearance: none;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -65,13 +68,7 @@ html{
 
 }
 
-:root{
-    --appearence:none;
-  }
-  *{
-    -webkit-appearance:var(--appearence-none);
-    appearance: var(--appearance-none);
-  }
+
 
 
 .logo{
@@ -129,6 +126,7 @@ html{
 
 #button-red{
     position: fixed;
+    width:20px;
     bottom: 123px;
     border: 1px solid black;
     border-radius: 30px;
@@ -141,6 +139,7 @@ html{
 
 #button-blue{
     position: fixed;
+    width:20px;
     bottom: 123px;
     border: 1px solid black;
     border-radius: 30px;
@@ -154,6 +153,7 @@ html{
 
 #button-yellow{
     position: fixed;
+    width:20px;
     bottom: 123px;
     border: 1px solid black;
     border-radius: 30px;
@@ -166,6 +166,7 @@ html{
 
 #button-green{
     position: fixed;
+    width:20px;
     bottom: 123px;
     border: 1px solid black;
     border-radius: 50px;
@@ -178,6 +179,7 @@ html{
 
 #button-orange{
     position: fixed;
+    width:20px;
     bottom: 123px;
     border: 1px solid black;
     border-radius: 30px;
@@ -190,6 +192,7 @@ html{
 
 #button-white{
     position: fixed;
+    width:20px;
     bottom: 123px;
     border: 1px solid black;
     border-radius: 30px;
@@ -197,7 +200,6 @@ html{
     color: white;
     margin-left:200px;
     cursor:pointer;
-
 }
  
 .cssbuttons-io-button {
@@ -259,7 +261,38 @@ html{
     transform: scale(0.95);
   }
   
+@media screen and (min-width:750px){
 
+html{
+  background-image: url('imgs/background.jpeg');
+  background-size:cover;
+}
+
+.choose{
+  font-size:1.5rem;
+}
+
+.car1{
+  display: flex;
+  justify-content: center;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 5px 28px 51px 21px;
+  position: fixed;
+  height:80%;
+  width: 100%;
+  bottom: 0;
+  background: radial-gradient(circle, rgba(10, 64, 130, 0.829) 56%, rgb(16, 76, 150) 100%);
+  overflow-y: hidden;
+
+}
+
+.imagens{
+  position:absolute;
+  margin-top:-100px;
+  width:700px;
+  height:600px;
+}
+}
 
   /* .vagas{
     display: flex;

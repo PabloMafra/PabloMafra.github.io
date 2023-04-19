@@ -31,17 +31,19 @@
 <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
 
 </head>
-<header><h1 class="logo"><a href="../"><img src="../imgs/logo.png" width="75" height="35"></a></img></h1>
-      
-</header>
+
 <body>
+    <header><h1 class="logo"><a href="../"><img src="../imgs/logo.png" width="75" height="35"></a></img></h1>
+      
+    </header>
     
     <hr class="hr-title">
     
     <div class="container">
+    <div class="divisao"><i class="fa-solid fa-warehouse fa-2xl"></i></div>
     <div id="bg" style="display:none;">
         <div id="pop-up" style="display:none;"><i class="fa-regular fa-face-sad-tear fa-2xl" id="icon_sad" display:none;"></i><i class="fa-regular fa-circle-check fa-2xl" id="icon_ok" style="display:flex;"></i><br>
-            <h1 class="message" id="title_success" style="display:flex;">Vaga cadastrada com sucesso!</h1>
+            <h1 class="message" id="title_success" style="display:flex;">Vaga reservada com sucesso!</h1>
             <h1 class="message" id="title_full" style="display:none;"><span class="text-1"><div style="display:flex;justify-content:center;">Que pena...</div><br>Todas as vagas estão reservadas!</h1>
             <button onclick="fecharPop()" class="cssbuttons-io-button" id="fechar"> Fechar
                 <div class="icon">
@@ -50,7 +52,7 @@
               </button>
         </div>
     </div>
-    <div class="divisao"><i class="fa-solid fa-warehouse fa-2xl"></i></div>
+    
 
     <div action="index.html" method="POST" id="form" class="input-form">
         

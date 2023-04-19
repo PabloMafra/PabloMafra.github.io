@@ -65,9 +65,9 @@ document.querySelector('#agendar').addEventListener('click', () => {
           // Envia os dados para o Realtime Database
           
           firebaseRef.push(usuarios).then(() => {
+            icon_sad.style.display = "none";
             fechar.style.display = "flex";
             background.style.display = "flex";
-            icon_sad.style.display = "none";
             
             // location.reload();
         
