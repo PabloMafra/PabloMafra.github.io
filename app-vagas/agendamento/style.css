@@ -21,7 +21,6 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -193,7 +192,7 @@ header{
   background: #ffffff;
   padding: 0 0 0 9px;
   border-radius: 10px;
-  margin-bottom:35px;
+  margin-bottom:40px;
 }
 
 
@@ -207,7 +206,7 @@ header{
   flex-direction: column; */
   /* flex-wrap: wrap; */
   /* margin-left:15px; */
-  margin-top:30px;
+  margin-top:45px;
   /*padding:
   margin-bottom: 30px; */
   border-radius: 10px;
@@ -231,6 +230,10 @@ header{
 .fa-solid.fa-clock{
   margin-left: 3px;
   color: #0A4182;
+}
+
+.fa-clock{
+  margin-bottom: -50px;
 }
 
 /*pop-up*/
@@ -275,7 +278,7 @@ display: -webkit-flex;
 display: flex;
 -webkit-justify-content: center;
 justify-content: center;
-margin-top:50px;
+margin-top:15px;
 }
 
 .button {
@@ -305,7 +308,7 @@ margin-top:50px;
   
 .button .button__icon {
   position:absolute;
-  transform: translateX(109px);
+  transform: translateX(105px);
   height:100%;
   width:33px;
   background-color:white;

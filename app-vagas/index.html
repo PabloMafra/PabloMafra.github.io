@@ -1,68 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estacionamento It One</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="imgs/favicon.png" sizes="32x32">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <link rel="icon" href="../imgs/favicon.png" sizes="32x32">
+    <script src="https://kit.fontawesome.com/eec0e0d660.js" crossorigin="anonymous"></script>
+
 </head>
-
 <body>
-  <header><h1 class="logo"><a href="#"><img src="imgs/logo.png" width="75" height="35"></a></img></h1>
-    <hr class="hr-title">
-   
-  </header>
-    
-    <div class="car1">
-        <h1 class="choose">Escolha a cor do carro!</h1>
-
-        <!-- <div class="vagas">
-        
-        <button class="vagas-espec">Vaga 1 </button>&nbsp;
-        <button class="vagas-espec">Vaga 2 </button>&nbsp;
-        <button class="vagas-espec">Vaga 3 </button>&nbsp;
-        <button class="vagas-espec">Vaga 4 </button>&nbsp;
-        <button class="vagas-espec">Vaga 5 </button>&nbsp;
-        <br>
-        <br>
-        <button class="vagas-espec">Vaga 6 </button>&nbsp;
-        <button class="vagas-espec">Vaga 7 </button>&nbsp;
-        <button class="vagas-espec">Vaga 8 </button>&nbsp;
-        <button class="vagas-espec">Vaga 9 </button>&nbsp;
-        <button class="vagas-espec">Vaga 10 </button>&nbsp;
-        </div> -->
-   
-        <img class="imagens" id="red" src="imgs/cars/red.png" width="360" height="260" style="display:block;" alt="">
-        <img  id="orange" class="imagens" src="imgs/cars/orange.png" width="360" height="260" style="display:none;" alt="">
-        <img   id="white" class="imagens" src="imgs/cars/white.png" width="360" height="260" style="display:none;" alt="">
-        <img  id="blue" class="imagens" src="imgs/cars/blue.png" width="360" height="260" style="display:none;" alt="">
-        <img   id="black" class="imagens" src="imgs/cars/black.png" width="360" height="260" style="display:none;" alt="">
-        <img   id="yellow" class="imagens" src="imgs/cars/yellow.png" width="360" height="260" style="display:none;" alt="">
 
 
-        <div class="button-cars">
-        <button onclick="chooseRed()" id="button-red">x</button>
-        <button onclick="chooseOrange()"  id="button-orange">x</button>
-        <button onclick="chooseWhite()"  id="button-white">x</button>
-        <button onclick="chooseBlue()"  id="button-blue">x</button>
-        <button onclick="chooseBlack()"  id="button-black">x</button>
-        <button onclick="chooseYellow()" id="button-yellow">x</button>
+<div id="loading" style="display:none;"> 
+    <div class="loading-spinner">
+        <span class="text-loading">Carregando</span>
+        <div class="loading-spinner-inner">
+          <div class="loading-spinner-circle"></div>
+          <div class="loading-spinner-circle"></div>
+          <div class="loading-spinner-circle"></div>
+          <div class="loading-spinner-circle"></div>
+          <div class="loading-spinner-circle"></div>
         </div>
+      </div>
+</div>
 
-        
-
-    <button onClick="window.location.href = './agendamento/'" class="cssbuttons-io-button"> Próximo
+<div id="pop-up" style="display:none;"><i class="fa-regular fa-circle-xmark fa-2xl" style="color: #ff0000;"></i><br>
+    <h1 class="message" id="title_success" style="display:flex;">Usuário não encontrado!</h1>
+    <h1 class="message" id="title_full" style="display:none;"><span class="text-1"><div style="display:flex;justify-content:center;">Que pena...</div><br>Todas as vagas estão reservadas!</h1>
+    <button onclick="fecharPop()" class="cssbuttons-io-button" id="fechar"> Fechar
         <div class="icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+          x
         </div>
-      </button></div>
-      
+      </button>
+</div>
 
     
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="server.js"></script>
+    <header><h1 class="logo"><a href="../"><img src="imgs/logo.png" width="75" height="35"></a></img></h1>
+      
+    </header>
 
+    <form class="form" onsubmit="return login()" autocomplete="off">
+        <p class="form-title">Entrar</p>
+        <div class="form-control">
+            <input type="value" id="email" required="">
+            <label>
+                <span style="transition-delay:0ms">E</span><span style="transition-delay:50ms">-</span><span style="transition-delay:100ms">m</span><span style="transition-delay:150ms">a</span><span style="transition-delay:200ms">i</span><span style="transition-delay:250ms">l</span>
+            </label>
+        </div>       
+    
+        <div class="form-control">
+            <input type="password" id="password" required="">
+            <label>
+                <span style="transition-delay:0ms">S</span><span style="transition-delay:50ms">e</span><span style="transition-delay:100ms">n</span><span style="transition-delay:150ms">h</span><span style="transition-delay:200ms">a</span>
+            </label>
+        </div>
+        <button type="submit" class="submit">
+            Entrar
+        </button>
+    </form>
+
+    <script type="text/javascript" src="./agendamento/script.js"></script>
 </body>
 </html>
+ 
