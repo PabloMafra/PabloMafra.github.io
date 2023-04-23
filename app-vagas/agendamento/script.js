@@ -12,11 +12,6 @@ const icon_ok = document.getElementById('icon_ok');
 
 const icon_sad = document.getElementById('icon_sad');
 
-function fecharPop(){
-    fechar.style.display = "none";
-    background.style.display = "none";
-    location.reload();
-}
 
 
 const firebaseConfig = {
@@ -30,9 +25,20 @@ const firebaseConfig = {
     measurementId: "G-KCN7NX1Y8V"
   };
 
-  
-
 firebase.initializeApp(firebaseConfig);
+
+function fecharPop(){
+  fechar.style.display = "none";
+  background.style.display = "none";
+  location.reload();
+}
+
+function load(){
+  const loading = document.getElementById("loading");
+  loading.style.display = "flex";
+  window.location.href = "../agendamento/";
+
+}
 
 document.querySelector('#agendar').addEventListener('click', () => {
   var firebaseRef = firebase.database().ref(`usuarios/vagas`);
