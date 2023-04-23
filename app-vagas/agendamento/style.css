@@ -242,10 +242,12 @@ display: -webkit-flex;
 display: flex;
 -webkit-justify-content: center;
 justify-content: center;
-position: fixed;
-bottom: 130px;
+align-items: center;
+position: absolute;
+bottom: 10%;
+flex-direction: column;
 width: 90%;
-height: 450px;
+height: 100%;
 border: 2px solid white;
 border-radius:15px;
 background: #0A4182;
@@ -253,11 +255,20 @@ z-index:2;
 }
 
 .message{
+  display: -webkit-flex;
+display: flex;
+-webkit-align-items: center;
+align-items: center;
+-webkit-justify-content: center;
+justify-content: center;
 color:white;
 font-family: 'Roboto', sans-serif;
-margin-top:250px;
+position: fixed;
+margin-top:150px;
 font-size:1.2rem;
 padding:5px;
+bottom:150px;
+
 }
 
 .fa-regular.fa-circle-check{
@@ -282,7 +293,7 @@ margin-top:15px;
 }
 
 .button {
-  margin-bottom:30px;
+  margin-bottom:3px;
   position: relative;
   width: 150px;
   height: 40px;
@@ -368,7 +379,7 @@ margin-top:15px;
   box-shadow: inset 0 0 1.6em -0.6em #0a4182;
   overflow: hidden;
   position: fixed;
-  bottom:167px;
+  bottom:85px;
   height:2.8em;
   padding-right:3.3em;
   width:70%;
@@ -415,6 +426,12 @@ margin-top:15px;
   body{
       background-image:url('../imgs/background.jpeg');
       background-size:contain; 
+  }
+  #pop-up{
+    width:650px;
+  }
+  .cssbuttons-io-button{
+    width:455px;
   }
 }
 
