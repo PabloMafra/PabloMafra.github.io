@@ -284,7 +284,6 @@ header{
     display: flex;
     -webkit-justify-content: center;
     justify-content: center;
-    position: absolute;
     align-items: center;
     bottom: 25%;
     width: 90%;
@@ -305,7 +304,7 @@ header{
         
     .fa-regular.fa-circle-xmark.fa-2xl{
       position: absolute;
-      top: 100px;
+      margin-top:-250px;
     }
 
     .cssbuttons-io-button {
@@ -370,6 +369,21 @@ header{
     
     .cssbuttons-io-button:active .icon {
       transform:scale(.95); 
+    }
+    
+
+
+    #bg{
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 200%;
+      background: rgba(0, 0, 0, 0.61);
+      z-index:1;
+      position: absolute;
     }
     
 

@@ -18,10 +18,6 @@ function fecharPop(){
     location.reload();
 }
 
-// function reservarVaga(){
-//     fechar.style.display = "flex";
-//     background.style.display = "flex";
-// }
 
 const firebaseConfig = {
     apiKey: "AIzaSyDfSQex_8VL8GvNZnMchygRqhE0Zki9up8",
@@ -39,7 +35,6 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 document.querySelector('#agendar').addEventListener('click', () => {
-  const vaga = document.getElementById('vaga').value;
   var firebaseRef = firebase.database().ref(`usuarios/vagas`);
 
   const name = document.getElementById('name').value;
@@ -98,6 +93,7 @@ function login() {
   .catch(() => {
     loading.style.display = "none";
     fechar.style.display = "flex";
+    background.style.display = "flex";
   });
 }
 
