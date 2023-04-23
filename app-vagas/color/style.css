@@ -64,8 +64,6 @@ html{
 }
 
 
-
-
 .logo{
   display:-webkit-flex;
     display:flex;
@@ -87,6 +85,7 @@ html{
     font-weight: bold;
     color: white;
     margin-top:30px;
+    padding:3px;
 }
 
 .car1 {
@@ -116,91 +115,91 @@ html{
   display: -webkit-flex;
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin-right: 50px;
-  cursor: pointer;
-  bottom:0;
+  /* width: 100%; */
+  /* margin-right: 50px; */
+  /* cursor: pointer; */
+  bottom:69px;
 }
 
 #button-red{
-    position: fixed;
-    bottom: 123px;
+    /* position: fixed;
+    bottom: 123px; */
     width:20px;
     height:20px;
     border: 1px solid black;
     border-radius: 30px;
     background: #D2302E;
     color: #D2302E;
-    margin-right:100px;
+    margin-right:5px;
     cursor:pointer;
 
 }
 
 #button-blue{
-    position: fixed;
-    bottom: 123px;
+    /* position: fixed;
+    bottom: 123px; */
     width:20px;
     height:20px;
     border: 1px solid black;
     border-radius: 30px;
     background: #273FC4;
     color: #273FC4;
-    margin-right:40px;
+    margin-right:5px;
     cursor:pointer;
 }
 
 #button-yellow{
-    position: fixed;
-    bottom: 123px;
+    /* position: fixed;
+    bottom: 123px; */
     width:20px;
     height:20px;
     border: 1px solid black;
     border-radius: 30px;
     background: #DFDE3A;
     color: #DFDE3A;
-    margin-left:20px;
+    /* margin-right:5px; */
     cursor:pointer;
 
 }
 
 #button-black{
-    position: fixed;
-    bottom: 123px;
+    /* position: fixed;
+    bottom: 123px; */
     width:20px;
     height:20px;
     border: 1px solid black;
     border-radius: 50px;
     background: rgb(48, 48, 48);
     color: rgb(48,48,48);
-    margin-left:80px;
+    margin-right:5px;
     cursor:pointer;
 
 }
 
 #button-orange{
-    position: fixed;
-    bottom: 123px;
+    /* position: fixed;
+    bottom: 123px; */
     width:20px;
     height:20px;
     border: 1px solid black;
     border-radius: 30px;
     background: #F78E25;
     color: #F78E25;
-    margin-left:140px;
+    margin-right:5px;
     cursor:pointer;
 
 }
 
 #button-white{
-    position: fixed;
-    bottom: 123px;
+    /* position: fixed;
+    bottom: 123px; */
     width:20px;
     height:20px;
     border: 1px solid black;
     border-radius: 30px;
     background: white;
     color: white;
-    margin-left:200px;
+    margin-right:5px;
     cursor:pointer;
 }
  
@@ -404,3 +403,9 @@ padding:2px;
     opacity: 1;
   }
 }
+
+/* .teste{
+  display: flex;
+  justify-content: center;
+} */
+
