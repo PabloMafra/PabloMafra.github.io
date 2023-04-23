@@ -370,6 +370,11 @@ padding:2px;
     opacity: 1;
   }
 }
+@media screen and (min-width:650px){
+  .cssbuttons-io-button{
+    width: 520px;
+  }
+}
 
 @media screen and (min-width: 750px) {
   html {
