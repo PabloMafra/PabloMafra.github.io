@@ -27,6 +27,14 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
+firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
+  .then(() => {
+  })
+  .catch((error) => {
+    console.log(error)
+  });
+
+
 function fecharPop(){
   fechar.style.display = "none";
   background.style.display = "none";
