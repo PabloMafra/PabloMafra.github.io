@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas</title>
+    <link rel="stylesheet" href="vagas.css">
+    <link rel="icon" href="../../imgs/favicon.png" sizes="32x32">
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+</head>
+<body>
+    <div id="loading" style="display:none;"> 
+        <div class="loading-spinner">
+            <span class="text-loading">Carregando</span>
+            <div class="loading-spinner-inner">
+              <div class="loading-spinner-circle"></div>
+              <div class="loading-spinner-circle"></div>
+              <div class="loading-spinner-circle"></div>
+              <div class="loading-spinner-circle"></div>
+              <div class="loading-spinner-circle"></div>
+            </div>
+          </div>
+    </div>
+    
+    <div id="bg" style="display:none;"></div>
+    
+
+    <div class="vagas">
+        <button onclick="load()">Vaga 1</button>
+        <button onclick="load()">Vaga 2</button>
+    </div>
+    <hr class="division">
+    <div class="t"></div>
+    <hr class="division-1">
+    <div class="t-2"></div>
+    <div class="vagas">
+        <button onclick="load()">Vaga 3</button>
+        <button onclick="load()">Vaga 4</button>
+    </div>
+    <hr class="division3">
+    <div class="t-3"></div>
+    <hr class="division3-3">
+    <div class="t-3-3"></div>
+
+
+    <div class="vagas">
+        <button onclick="load()">Vaga 5</button>
+        <button onclick="load()">Vaga 6</button>
+    </div>
+    <hr class="division5">
+    <div class="t-5"></div>
+    <hr class="division5-5">
+    <div class="t-5-5"></div>
+    <div class="vagas">
+        <button onclick="load()">Vaga 7</button>
+        <button onclick="load()">Vaga 8</button>
+    </div>
+    <hr class="division6">
+    <div class="t-6"></div>
+    <hr class="division6-6">
+    <div class="t-6-6"></div>
+
+    <div class="vagas">
+        <button onclick="load()">Vaga 9</button>
+        <button onclick="load()">Vaga 10</button>
+    </div>
+    <div class="division-last"></div>
+    <div class="division-last-2"></div>
+    <div class="t-last"></div>
+    <div class="t-last-2"></div>
+
+
+<script type="text/javascript" src="../script.js"></script>
+<script type="text/javascript" src="auth.js"></script>
+</body>
+</html>

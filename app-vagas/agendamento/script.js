@@ -36,9 +36,18 @@ function fecharPop(){
 function load(){
   const loading = document.getElementById("loading");
   loading.style.display = "flex";
-  window.location.href = "../agendamento/";
+  window.location.href = "../";
 
 }
+
+function load2(){
+  const loading = document.getElementById("loading");
+  loading.style.display = "flex";
+  window.location.href = "../agendamento/vagas/";
+
+}
+
+
 
 document.querySelector('#agendar').addEventListener('click', () => {
   var firebaseRef = firebase.database().ref(`usuarios/vagas`);

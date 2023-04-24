@@ -1,65 +1,33 @@
-const red = document.getElementById('red');
-const blue = document.getElementById('blue');
-const yellow = document.getElementById('yellow');
-const black = document.getElementById('black');
-const orange = document.getElementById('orange');
-const white = document.getElementById('white');
+// const firebaseConfig = {
+//     apiKey: "AIzaSyDfSQex_8VL8GvNZnMchygRqhE0Zki9up8",
+//     authDomain: "vagas-garagem-bd78f.firebaseapp.com",
+//     databaseURL: "https://vagas-garagem-bd78f-default-rtdb.firebaseio.com",
+//     projectId: "vagas-garagem-bd78f",
+//     storageBucket: "vagas-garagem-bd78f.appspot.com",
+//     messagingSenderId: "255602450180",
+//     appId: "1:255602450180:web:096456bb32b9df37137a51",
+//     measurementId: "G-KCN7NX1Y8V"
+//   };
 
+// firebase.initializeApp(firebaseConfig);
 
-function chooseRed(){
-    red.style.display = "block"
-    yellow.style.display = "none";
-    blue.style.display = "none";
-    black.style.display = "none";
-    orange.style.display = "none";
-    white.style.display = "none";
-}
-
-function chooseBlue(){
-    red.style.display = "none"
-    yellow.style.display = "none";
-    blue.style.display = "block";
-    black.style.display = "none";
-    orange.style.display = "none";
-    white.style.display = "none";
-}
-
-function chooseYellow(){
-    red.style.display = "none"
-    yellow.style.display = "block";
-    blue.style.display = "none";
-    black.style.display = "none";
-    orange.style.display = "none";
-    white.style.display = "none";
-}
-
-function chooseBlack(){
-    red.style.display = "none"
-    yellow.style.display = "none";
-    blue.style.display = "none";
-    black.style.display = "block";
-    orange.style.display = "none";
-    white.style.display = "none";
-}
-
-function chooseOrange(){
-    red.style.display = "none"
-    yellow.style.display = "none";
-    blue.style.display = "none";
-    black.style.display = "none";
-    orange.style.display = "block";
-    white.style.display = "none";
-}
-
-function chooseWhite(){
-    red.style.display = "none"
-    yellow.style.display = "none";
-    blue.style.display = "none";
-    black.style.display = "none";
-    orange.style.display = "none";
-    white.style.display = "block";
-}
-
-
-
-
+// function login() {
+//     event.preventDefault();
+//     const email = document.getElementById("email").value;
+//     const password = document.getElementById("password").value;
+  
+//     const loading = document.getElementById("loading");
+//     loading.style.display = "flex";
+  
+//     firebase.auth().signInWithEmailAndPassword(email, password)
+//     .then(() => {
+//       loading.style.display = "none";
+//       window.location.href = "./color/";
+//     })
+//     .catch(() => {
+//       loading.style.display = "none";
+//       fechar.style.display = "flex";
+//       background.style.display = "flex";
+//     });
+//   }
+  
