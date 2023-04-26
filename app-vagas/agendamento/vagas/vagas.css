@@ -55,8 +55,7 @@ table {
 
 html{
     height: 100%;
-    background: -webkit-radial-gradient(circle, rgb(10, 64, 130) 56%, rgb(11, 60, 119) 100%);
-    background: radial-gradient(circle, rgb(10, 64, 130) 56%, rgb(11, 60, 119) 100%);
+    background: grey;
     
 }
 

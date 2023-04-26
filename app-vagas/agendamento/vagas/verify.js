@@ -10,7 +10,9 @@ const vagaRef8 = database.ref('vagas/vaga8');
 const vagaRef9 = database.ref('vagas/vaga9');
 const vagaRef10 = database.ref('vagas/vaga10');
 
-vagaRef1.on('value', (snapshot) => {
+const vagaRef = [vagaRef1, vagaRef2, vagaRef3, vagaRef4, vagaRef5, vagaRef6, vagaRef7, vagaRef8, vagaRef9, vagaRef10]
+
+vagaRef[0].on('value', (snapshot) => {
   const vagaData = snapshot.val();
 if(vagaData === "ocupado"){
   const span1 = document.getElementById("1");
@@ -21,7 +23,7 @@ if(vagaData === "ocupado"){
 });
 
 
-vagaRef2.on('value', (snapshot) => {
+vagaRef[1].on('value', (snapshot) => {
   const vagaData = snapshot.val();
 if(vagaData === "ocupado"){
   const span2 = document.getElementById("2");
@@ -32,7 +34,7 @@ if(vagaData === "ocupado"){
 });
 
 
-vagaRef3.on('value', (snapshot) => {
+vagaRef[2].on('value', (snapshot) => {
   const vagaData = snapshot.val();
 if(vagaData === "ocupado"){
   const span3 = document.getElementById("3");
@@ -43,7 +45,7 @@ if(vagaData === "ocupado"){
 });
 
 
-vagaRef4.on('value', (snapshot) => {
+vagaRef[3].on('value', (snapshot) => {
   const vagaData = snapshot.val();
 if(vagaData === "ocupado"){
   const span4 = document.getElementById("4");
@@ -54,7 +56,7 @@ if(vagaData === "ocupado"){
 });
 
 
-vagaRef5.on('value', (snapshot) => {
+vagaRef[4].on('value', (snapshot) => {
   const vagaData = snapshot.val();
 if(vagaData === "ocupado"){
   const span5 = document.getElementById("5");
@@ -65,7 +67,7 @@ if(vagaData === "ocupado"){
 });
 
 
-vagaRef6.on('value', (snapshot) => {
+vagaRef[5].on('value', (snapshot) => {
   const vagaData = snapshot.val();
 if(vagaData === "ocupado"){
   const span6 = document.getElementById("6");
@@ -76,7 +78,7 @@ if(vagaData === "ocupado"){
 });
 
 
-vagaRef7.on('value', (snapshot) => {
+vagaRef[6].on('value', (snapshot) => {
   const vagaData = snapshot.val();
 if(vagaData === "ocupado"){
   const span7 = document.getElementById("7");
@@ -87,7 +89,7 @@ if(vagaData === "ocupado"){
 });
 
 
-vagaRef8.on('value', (snapshot) => {
+vagaRef[7].on('value', (snapshot) => {
   const vagaData = snapshot.val();
 if(vagaData === "ocupado"){
   const span8 = document.getElementById("8");
@@ -98,7 +100,7 @@ if(vagaData === "ocupado"){
 });
 
 
-vagaRef9.on('value', (snapshot) => {
+vagaRef[8].on('value', (snapshot) => {
   const vagaData = snapshot.val();
 if(vagaData === "ocupado"){
   const span9 = document.getElementById("9");
@@ -109,7 +111,7 @@ if(vagaData === "ocupado"){
 });
 
 
-vagaRef10.on('value', (snapshot) => {
+vagaRef[9].on('value', (snapshot) => {
   const vagaData = snapshot.val();
 if(vagaData === "ocupado"){
   const span10 = document.getElementById("10");
@@ -127,8 +129,8 @@ const vagaRef = database.ref('vagas/vaga1');
 vagaRef.on('value', (snapshot) => {
 const vagaData = snapshot.val();
 if(vagaData === "livre"){
-vagaRef.set("ocupado");
-window.location.href = "../"
+// vagaRef.set("ocupado");
+window.location.href = "../?vaga=1";
 }else{
 
 }
@@ -142,8 +144,8 @@ const vagaRef = database.ref('vagas/vaga2');
 vagaRef.on('value', (snapshot) => {
 const vagaData = snapshot.val();
 if(vagaData === "livre"){
-vagaRef.set("ocupado");
-window.location.href = "../"
+// vagaRef.set("ocupado");
+window.location.href = "../?vaga=2";
 }
 });
 }
@@ -155,8 +157,8 @@ const vagaRef = database.ref('vagas/vaga3');
 vagaRef.on('value', (snapshot) => {
 const vagaData = snapshot.val();
 if(vagaData === "livre"){
-vagaRef.set("ocupado");
-window.location.href = "../"
+// vagaRef.set("ocupado");
+window.location.href = "../?vaga=3";
 }
 });
 }
@@ -168,8 +170,8 @@ const vagaRef = database.ref('vagas/vaga4');
 vagaRef.on('value', (snapshot) => {
 const vagaData = snapshot.val();
 if(vagaData === "livre"){
-vagaRef.set("ocupado");
-window.location.href = "../"
+// vagaRef.set("ocupado");
+window.location.href = "../?vaga=4";
 }
 });
 }
@@ -181,8 +183,8 @@ const vagaRef = database.ref('vagas/vaga5');
 vagaRef.on('value', (snapshot) => {
 const vagaData = snapshot.val();
 if(vagaData === "livre"){
-vagaRef.set("ocupado");
-window.location.href = "../"
+// vagaRef.set("ocupado");
+window.location.href = "../?vaga=5";
 }
 });
 }
@@ -194,8 +196,8 @@ const vagaRef = database.ref('vagas/vaga6');
 vagaRef.on('value', (snapshot) => {
 const vagaData = snapshot.val();
 if(vagaData === "livre"){
-vagaRef.set("ocupado");
-window.location.href = "../"
+// vagaRef.set("ocupado");
+window.location.href = "../?vaga=6";
 }
 });
 }
@@ -207,8 +209,8 @@ const vagaRef = database.ref('vagas/vaga7');
 vagaRef.on('value', (snapshot) => {
 const vagaData = snapshot.val();
 if(vagaData === "livre"){
-vagaRef.set("ocupado");
-window.location.href = "../"
+// vagaRef.set("ocupado");
+window.location.href = "../?vaga=7";
 }
 });
 }
@@ -220,8 +222,8 @@ const vagaRef = database.ref('vagas/vaga8');
 vagaRef.on('value', (snapshot) => {
 const vagaData = snapshot.val();
 if(vagaData === "livre"){
-vagaRef.set("ocupado");
-window.location.href = "../"
+// vagaRef.set("ocupado");
+window.location.href = "../?vaga=8";
 }
 });
 }
@@ -233,8 +235,8 @@ const vagaRef = database.ref('vagas/vaga9');
 vagaRef.on('value', (snapshot) => {
 const vagaData = snapshot.val();
 if(vagaData === "livre"){
-vagaRef.set("ocupado");
-window.location.href = "../"
+// vagaRef.set("ocupado");
+window.location.href = "../?vaga=9";
 }
 });
 }
@@ -245,9 +247,9 @@ const vagaRef = database.ref('vagas/vaga10');
 
 vagaRef.on('value', (snapshot) => {
 const vagaData = snapshot.val();
-if(vagaData === "livre"){
-vagaRef.set("ocupado");
-window.location.href = "../"
+if(vagaData === "livre"){ 
+// vagaRef.set("ocupado");
+window.location.href = "../?vaga=10";
 }
 });
 }
