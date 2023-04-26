@@ -121,124 +121,134 @@ if(vagaData === "ocupado"){
 
 
 function confere1(){
-    const database = firebase.database();
-    const vagaRef = database.ref('vagas/vaga1');
+const database = firebase.database();
+const vagaRef = database.ref('vagas/vaga1');
+
+vagaRef.on('value', (snapshot) => {
+const vagaData = snapshot.val();
+if(vagaData === "livre"){
+vagaRef.set("ocupado");
+window.location.href = "../"
+}else{
+
+}
+});
+}
   
-  vagaRef.on('value', (snapshot) => {
-    const vagaData = snapshot.val();
-  if(vagaData === "livre"){
-    vagaRef.set("ocupado");
-  }else{
+function confere2(){
+const database = firebase.database();
+const vagaRef = database.ref('vagas/vaga2');
+
+vagaRef.on('value', (snapshot) => {
+const vagaData = snapshot.val();
+if(vagaData === "livre"){
+vagaRef.set("ocupado");
+window.location.href = "../"
+}
+});
+}
   
-  }
-  });
-  }
+function confere3(){
+const database = firebase.database();
+const vagaRef = database.ref('vagas/vaga3');
+
+vagaRef.on('value', (snapshot) => {
+const vagaData = snapshot.val();
+if(vagaData === "livre"){
+vagaRef.set("ocupado");
+window.location.href = "../"
+}
+});
+}
   
-  function confere2(){
-    const database = firebase.database();
-    const vagaRef = database.ref('vagas/vaga2');
+function confere4(){
+const database = firebase.database();
+const vagaRef = database.ref('vagas/vaga4');
+
+vagaRef.on('value', (snapshot) => {
+const vagaData = snapshot.val();
+if(vagaData === "livre"){
+vagaRef.set("ocupado");
+window.location.href = "../"
+}
+});
+}
   
-  vagaRef.on('value', (snapshot) => {
-    const vagaData = snapshot.val();
-  if(vagaData === "livre"){
-    vagaRef.set("ocupado");
-  }
-  });
-  }
+function confere5(){
+const database = firebase.database();
+const vagaRef = database.ref('vagas/vaga5');
+
+vagaRef.on('value', (snapshot) => {
+const vagaData = snapshot.val();
+if(vagaData === "livre"){
+vagaRef.set("ocupado");
+window.location.href = "../"
+}
+});
+}
   
-  function confere3(){
-    const database = firebase.database();
-    const vagaRef = database.ref('vagas/vaga3');
+function confere6(){
+const database = firebase.database();
+const vagaRef = database.ref('vagas/vaga6');
+
+vagaRef.on('value', (snapshot) => {
+const vagaData = snapshot.val();
+if(vagaData === "livre"){
+vagaRef.set("ocupado");
+window.location.href = "../"
+}
+});
+}
   
-  vagaRef.on('value', (snapshot) => {
-    const vagaData = snapshot.val();
-  if(vagaData === "livre"){
-    vagaRef.set("ocupado");
-  }
-  });
-  }
+function confere7(){
+const database = firebase.database();
+const vagaRef = database.ref('vagas/vaga7');
+
+vagaRef.on('value', (snapshot) => {
+const vagaData = snapshot.val();
+if(vagaData === "livre"){
+vagaRef.set("ocupado");
+window.location.href = "../"
+}
+});
+}
   
-  function confere4(){
-    const database = firebase.database();
-    const vagaRef = database.ref('vagas/vaga4');
+function confere8(){
+const database = firebase.database();
+const vagaRef = database.ref('vagas/vaga8');
+
+vagaRef.on('value', (snapshot) => {
+const vagaData = snapshot.val();
+if(vagaData === "livre"){
+vagaRef.set("ocupado");
+window.location.href = "../"
+}
+});
+}
   
-  vagaRef.on('value', (snapshot) => {
-    const vagaData = snapshot.val();
-  if(vagaData === "livre"){
-    vagaRef.set("ocupado");
-  }
-  });
-  }
+function confere9(){
+const database = firebase.database();
+const vagaRef = database.ref('vagas/vaga9');
+
+vagaRef.on('value', (snapshot) => {
+const vagaData = snapshot.val();
+if(vagaData === "livre"){
+vagaRef.set("ocupado");
+window.location.href = "../"
+}
+});
+}
   
-  function confere5(){
-    const database = firebase.database();
-    const vagaRef = database.ref('vagas/vaga5');
-  
-  vagaRef.on('value', (snapshot) => {
-    const vagaData = snapshot.val();
-  if(vagaData === "livre"){
-    vagaRef.set("ocupado");
-  }
-  });
-  }
-  
-  function confere6(){
-    const database = firebase.database();
-    const vagaRef = database.ref('vagas/vaga6');
-  
-  vagaRef.on('value', (snapshot) => {
-    const vagaData = snapshot.val();
-  if(vagaData === "livre"){
-    vagaRef.set("ocupado");
-  }
-  });
-  }
-  
-  function confere7(){
-    const database = firebase.database();
-    const vagaRef = database.ref('vagas/vaga7');
-  
-  vagaRef.on('value', (snapshot) => {
-    const vagaData = snapshot.val();
-  if(vagaData === "livre"){
-    vagaRef.set("ocupado");
-  }
-  });
-  }
-  
-  function confere8(){
-    const database = firebase.database();
-    const vagaRef = database.ref('vagas/vaga8');
-  
-  vagaRef.on('value', (snapshot) => {
-    const vagaData = snapshot.val();
-  if(vagaData === "livre"){
-    vagaRef.set("ocupado");
-  }
-  });
-  }
-  
-  function confere9(){
-    const database = firebase.database();
-    const vagaRef = database.ref('vagas/vaga9');
-  
-  vagaRef.on('value', (snapshot) => {
-    const vagaData = snapshot.val();
-  if(vagaData === "livre"){
-    vagaRef.set("ocupado");
-  }
-  });
-  }
-  
-  function confere10(){
-    const database = firebase.database();
-    const vagaRef = database.ref('vagas/vaga10');
-  
-  vagaRef.on('value', (snapshot) => {
-    const vagaData = snapshot.val();
-  if(vagaData === "livre"){
-    vagaRef.set("ocupado");
-  }
-  });
-  }
+function confere10(){
+const database = firebase.database();
+const vagaRef = database.ref('vagas/vaga10');
+
+vagaRef.on('value', (snapshot) => {
+const vagaData = snapshot.val();
+if(vagaData === "livre"){
+vagaRef.set("ocupado");
+window.location.href = "../"
+}
+});
+}
   

@@ -1,7 +1,6 @@
 firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-    } else {
-      window.location.replace("../");
-    }
-  });
-  
+  if (user) {
+  } else {
+    window.location.replace("../");
+  }
+});

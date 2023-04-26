@@ -27,6 +27,8 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
+
+
 firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
   .then(() => {
   })
@@ -118,7 +120,6 @@ function login() {
     background.style.display = "flex";
   });
 }
-
 
 
 
