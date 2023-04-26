@@ -80,7 +80,7 @@ button{
     font-size: 20px;
     background: rgba(255, 255, 255, 0.466);
     color:black;
-
+    cursor:pointer;
 }
 
 .division{
@@ -395,11 +395,15 @@ button{
       transform: scale(1);
       opacity: 1;
     }
-  }  
+  } 
+
+
+
+
 
   @media screen and (min-width:650px){
     button{
-      width:300px;
+      width:30%;
     }
     .division{
       display: flex;
@@ -499,6 +503,75 @@ button{
       border: 3px solid orange;
   }  
   }
+
+  @media screen and (min-width:720px){
+
+    .t-2{
+          right:53.5%;
+    }
+    .t-3{
+        right:53.5%;
+    }
+    
+    .t-5{
+        right:53.5%;
+    }
+    
+    .t-6{
+        right:53.5%;
+    }
+    
+    .t-last{
+        right:53.5%;
+    }
+      
+    }
+
+  @media screen and (min-width:950px){
+
+    .t-2{
+        right:54%;
+    }
+    .t-3{
+        right:54%;
+    }
+    
+    .t-5{
+        right:54%;
+    }
+    
+    .t-6{
+        right:54%;
+    }
+    
+    .t-last{
+        right:54%;
+    }
+        
+    }
+    
+    @media screen and (min-width:1440px){
+
+        .t-2{
+            right:54.5%;
+        }
+        .t-3{
+            right:54.5%;
+        }
+        
+        .t-5{
+            right:54.5%;
+        }
+        
+        .t-6{
+            right:54.5%;
+        }
+        
+        .t-last{
+            right:54.5%;
+        }
+            
+        }
   
 
 
