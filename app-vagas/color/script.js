@@ -4,7 +4,7 @@ const yellow = document.getElementById('yellow');
 const black = document.getElementById('black');
 const orange = document.getElementById('orange');
 const white = document.getElementById('white');
-
+const input = document.getElementById('input');
 
 function chooseRed(){
     red.style.display = "block"
@@ -13,6 +13,7 @@ function chooseRed(){
     black.style.display = "none";
     orange.style.display = "none";
     white.style.display = "none";
+    input.value = "red";
 }
 
 function chooseBlue(){
@@ -22,6 +23,7 @@ function chooseBlue(){
     black.style.display = "none";
     orange.style.display = "none";
     white.style.display = "none";
+    input.value = "blue";
 }
 
 function chooseYellow(){
@@ -31,6 +33,7 @@ function chooseYellow(){
     black.style.display = "none";
     orange.style.display = "none";
     white.style.display = "none";
+    input.value = "yellow";
 }
 
 function chooseBlack(){
@@ -40,6 +43,7 @@ function chooseBlack(){
     black.style.display = "block";
     orange.style.display = "none";
     white.style.display = "none";
+    input.value = "black";
 }
 
 function chooseOrange(){
@@ -49,6 +53,7 @@ function chooseOrange(){
     black.style.display = "none";
     orange.style.display = "block";
     white.style.display = "none";
+    input.value = "orange";
 }
 
 function chooseWhite(){
@@ -58,8 +63,15 @@ function chooseWhite(){
     black.style.display = "none";
     orange.style.display = "none";
     white.style.display = "block";
+    input.value = "white";
 }
 
+function load2(){
+    const loading = document.getElementById("loading");
+    loading.style.display = "flex";
+    window.location.href = `../agendamento/vagas/?color=${input.value}`;
+  
+}
 
 
 

@@ -37,48 +37,72 @@ firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
   });
   
   function limparDados() {
-    var vagasRef = firebase.database().ref('vagas');
-    vagasRef.remove()
-      .then(function() {
-        console.log("Dados do nó 'vagas' removidos com sucesso!");
-      })
-      .catch(function(error) {
-        console.error("Erro ao remover os dados do nó 'vagas': ", error);
-      });
+    const vagasRef = firebase.database().ref(`vagas/vaga1/`);
+    const vagasRef2 = firebase.database().ref(`vagas/vaga2/`);
+    const vagasRef3 = firebase.database().ref(`vagas/vaga3/`);
+    const vagasRef4 = firebase.database().ref(`vagas/vaga4/`);
+    const vagasRef5 = firebase.database().ref(`vagas/vaga5/`);
+    const vagasRef6 = firebase.database().ref(`vagas/vaga6/`);
+    const vagasRef7 = firebase.database().ref(`vagas/vaga7/`);
+    const vagasRef8 = firebase.database().ref(`vagas/vaga8/`);
+    const vagasRef9 = firebase.database().ref(`vagas/vaga9/`);
+    const vagasRef10 = firebase.database().ref(`vagas/vaga10/`);
+    const user = firebase.database().ref('usuarios/vagas/')
+
+    user.remove();
+
+    vagasRef.update({ status: 'livre' })
+
+    vagasRef2.update({ status: 'livre' })
+
+    vagasRef3.update({ status: 'livre' })
+
+    vagasRef4.update({ status: 'livre' })
+
+    vagasRef5.update({ status: 'livre' })
+
+    vagasRef6.update({ status: 'livre' })
+
+    vagasRef7.update({ status: 'livre' })
+
+    vagasRef8.update({ status: 'livre' })
+
+    vagasRef9.update({ status: 'livre' })
+
+    vagasRef10.update({ status: 'livre' })
   }
   
 
-  var agora = new Date();
-  var meiaNoite = new Date(agora.getFullYear(), agora.getMonth(), agora.getDate() + 1, 0, 0, 0);
-  var tempoRestante = meiaNoite.getTime() - agora.getTime();
+  const agora = new Date();
+  const meiaNoite = new Date(agora.getFullYear(), agora.getMonth(), agora.getDate() + 1, 0, 0, 0);
+  const tempoRestante = meiaNoite.getTime() - agora.getTime();
   setTimeout(function() {
     limparDados();
     setInterval(limparDados, 24 * 60 * 60 * 1000);
   }, tempoRestante);
 
+function fecharPopFinalizado(){
+  fechar.style.display = "none";
+  background.style.display = "none";
+  window.location.href = "../"
+}
+
 function fecharPop(){
   fechar.style.display = "none";
   background.style.display = "none";
-  location.reload();
 }
+
 
 function load(){
   const loading = document.getElementById("loading");
   loading.style.display = "flex";
   window.location.href = "../";
-
-}
-
-function load2(){
-  const loading = document.getElementById("loading");
-  loading.style.display = "flex";
-  window.location.href = "../agendamento/vagas/";
-
 }
 
 const urlParams = new URLSearchParams(window.location.search);
 const valor = urlParams.get('vaga');
 document.getElementById("vaga").value = valor;
+
 
 document.querySelector('#agendar').addEventListener('click', () => {
   var firebaseRef = firebase.database().ref(`usuarios/vagas`);
@@ -87,7 +111,6 @@ document.querySelector('#agendar').addEventListener('click', () => {
   const placa = document.getElementById('placa').value;
   const hour = document.getElementById('hour').value;
   const vaga = document.getElementById('vaga').value;
-
   // const now = moment.tz('America/Sao_Paulo').toDate();
 
   // const reserva = moment.tz(hour, 'HH:mm', 'America/Sao_Paulo').toDate();
@@ -101,12 +124,11 @@ document.querySelector('#agendar').addEventListener('click', () => {
   //   return;
   // }
 
-
   const usuarios = {
       name: name,
       placa: placa,
       hour: hour,
-      vaga: vaga
+      vaga: vaga,
   }
 
   firebaseRef.once('value', (snapshot) => {
@@ -121,15 +143,11 @@ document.querySelector('#agendar').addEventListener('click', () => {
           firebaseRef.push(usuarios).then(() => {
             const database = firebase.database();
             const vagaRef = database.ref(`vagas/vaga${vaga}`);
-            vagaRef.set("ocupado");
+            vagaRef.set({status: "ocupado"});
 
-            
-            
-            
             icon_sad.style.display = "none";
             fechar.style.display = "flex";
             background.style.display = "flex";
-            window.close();
         
               firebaseRef.get().then(snapshot => {
                   snapshot.docs.forEach(doc => {
