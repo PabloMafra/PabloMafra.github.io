@@ -162,7 +162,15 @@ if(color == "yellow"){
   img1_yellow.style.display = "initial";
 }
 span1.style.display = "none";
-window.location.href = "../?vaga=1";
+
+const atraso = 500;
+
+function trocarPagina() {
+  window.location.href = "../?vaga=1";
+}
+
+setTimeout(trocarPagina, atraso);
+
 }
 });
 }
@@ -202,7 +210,14 @@ if(vagaData === "livre"){
     img2_yellow.style.display = "initial";
   }
   span2.style.display = "none";
-  window.location.href = "../?vaga=2";
+  const atraso = 500;
+
+  function trocarPagina() {
+    window.location.href = "../?vaga=2";
+  }
+  
+  setTimeout(trocarPagina, atraso);
+  
 }
 });
 }
@@ -243,7 +258,14 @@ if(vagaData === "livre"){
   }
   span3.style.display = "none";
 
-window.location.href = "../?vaga=3";
+  const atraso = 500;
+
+  function trocarPagina() {
+    window.location.href = "../?vaga=3";
+  }
+  
+  setTimeout(trocarPagina, atraso);
+  
 }
 });
 }
@@ -263,7 +285,7 @@ if(vagaData === "livre"){
   const img4_blue = document.getElementById('img4-blue');
   
   
-  const span4 = document.getElementById('3')
+  const span4 = document.getElementById('4')
   if(color == "orange"){
     img4_orange.style.display = "initial";
   }
@@ -284,8 +306,14 @@ if(vagaData === "livre"){
   }
   span4.style.display = "none";
 
-window.location.href = "../?vaga=4";
-}
+  const atraso = 500;
+
+  function trocarPagina() {
+    window.location.href = "../?vaga=4";
+  }
+  
+  setTimeout(trocarPagina, atraso);
+  }
 });
 }
   
@@ -325,8 +353,14 @@ if(vagaData === "livre"){
   }
   span5.style.display = "none";
 
-window.location.href = "../?vaga=5";
-}
+  const atraso = 500;
+
+  function trocarPagina() {
+    window.location.href = "../?vaga=5";
+  }
+  
+  setTimeout(trocarPagina, atraso);
+  }
 });
 }
   
@@ -366,8 +400,14 @@ if(vagaData === "livre"){
   }
   span6.style.display = "none";
 
-window.location.href = "../?vaga=6";
-}
+  const atraso = 500;
+
+  function trocarPagina() {
+    window.location.href = "../?vaga=6";
+  }
+  
+  setTimeout(trocarPagina, atraso);
+  }
 });
 }
   
@@ -407,8 +447,14 @@ if(vagaData === "livre"){
   }
   span7.style.display = "none";
 
-window.location.href = "../?vaga=7";
-}
+  const atraso = 500;
+
+  function trocarPagina() {
+    window.location.href = "../?vaga=7";
+  }
+  
+  setTimeout(trocarPagina, atraso);
+  }
 });
 }
   
@@ -448,8 +494,14 @@ if(vagaData === "livre"){
   }
   span8.style.display = "none";
 
-window.location.href = "../?vaga=8";
-}
+  const atraso = 500;
+
+  function trocarPagina() {
+    window.location.href = "../?vaga=8";
+  }
+  
+  setTimeout(trocarPagina, atraso);
+  }
 });
 }
   
@@ -489,8 +541,14 @@ if(vagaData === "livre"){
   }
   span9.style.display = "none";
 
-window.location.href = "../?vaga=9";
-}
+  const atraso = 500;
+
+  function trocarPagina() {
+    window.location.href = "../?vaga=9";
+  }
+  
+  setTimeout(trocarPagina, atraso);
+  }
 });
 }
   
@@ -530,8 +588,14 @@ if(vagaData === "livre"){
   }
   span10.style.display = "none";
 
-window.location.href = "../?vaga=10";
-}
+  const atraso = 500;
+
+  function trocarPagina() {
+    window.location.href = "../?vaga=10";
+  }
+  
+  setTimeout(trocarPagina, atraso);
+  }
 });
 }
   
